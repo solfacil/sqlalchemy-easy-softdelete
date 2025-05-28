@@ -17,7 +17,7 @@ jobs:
   # This workflow contains a single job called "release"
   release:
     name: Build and Publish
-    runs-on: ubuntu-20.04
+    runs-on: shd-eks-runners
 
     strategy:
       matrix:

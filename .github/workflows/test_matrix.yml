@@ -2,17 +2,17 @@ name: Tests
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main, "*" ]
+    branches: [main, "*"]
   workflow_dispatch:
 
 jobs:
   test:
-    runs-on: ubuntu-20.04
+    runs-on: shd-eks-runners
     strategy:
       matrix:
-        python-version: [ "3.9",  "3.10", "3.11" ]
+        python-version: ["3.9", "3.10", "3.11"]
     steps:
       - uses: actions/checkout@v3
 
